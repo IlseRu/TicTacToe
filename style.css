@@ -1,0 +1,122 @@
+*{
+    /*quita los margenes predefinidos*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.cuadro {
+    background-color: black;
+    width: 450px;
+    height: 450px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cuadro div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    font-size: 80px;
+    font-family: verdanas;
+}
+
+.cuadro div:hover{
+    background-color:  rgb(248, 233, 248);
+    cursor: pointer;
+
+}
+
+button{
+    padding: 20px 10px;
+    background-color: rgb(146, 60, 226);
+    color: white;
+    outline: none;
+    border: 0px;
+    border-radius:  8px;
+    width: 200px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(132, 24, 233);
+
+}
+
+.lineContainer {
+    position: relative;
+}
+
+#linea{
+    position: absolute;
+    display: block;
+    background-color: purple;
+
+}
+
+.lineHorizontal{
+    height: 10px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.lineVertical{
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 10px;
+    top: 0px;
+    left: 0px;
+}
+
+#turnoX {
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: none;
+}
+
+#turnoO {
+    padding: 20px 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: 0px;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: none;
+}
+
+
